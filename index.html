@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manutec Predial: instalações e manutenção elétrica, CFTV, refrigeração, climatização e automação residencial em Volta Redonda e região.">
+  <title>Manutec Predial | Instalação e Manutenção</title>
+  <style>
+    :root {
+      --azul: #123d65;
+      --azul-claro: #1976b9;
+      --cinza: #f2f5f8;
+      --texto: #263445;
+      --verde: #168b55;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--azul);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 25px; font-weight: bold; }
+    .logo span { color: #72c5ff; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-size: 14px; }
+    .hero {
+      background: linear-gradient(135deg, #123d65, #1976b9);
+      color: white;
+      padding: 76px 7%;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.2; }
+    .hero p { max-width: 720px; margin: 20px auto; font-size: 18px; }
+    .botao {
+      display: inline-block;
+      background: var(--verde);
+      color: white;
+      padding: 13px 23px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    section { padding: 55px 7%; }
+    section h2 { color: var(--azul); text-align: center; margin-top: 0; }
+    .intro { max-width: 850px; text-align: center; margin: auto; }
+    .cinza { background: var(--cinza); }
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 23px;
+      box-shadow: 0 3px 14px #102d4510;
+      border-bottom: 3px solid var(--azul-claro);
+    }
+    .card h3 { color: var(--azul); margin-top: 0; }
+    .sobre { max-width: 850px; margin: auto; }
+    .contato { text-align: center; }
+    footer {
+      background: #102d45;
+      color: white;
+      padding: 25px 7%;
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+      .hero { padding: 55px 6%; }
+      section { padding: 42px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MANUTEC <span>PREDIAL</span></div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>Soluções técnicas para sua casa e empresa</h1>
+      <p>Instalação e manutenção elétrica, CFTV, refrigeração, climatização e automação residencial.</p>
+      <p>Atendimento em Volta Redonda e região — RJ.</p>
+      <a class="botao" href="#contato">Solicite um orçamento</a>
+    </section>
+
+    <section id="servicos" class="cinza">
+      <h2>Nossos serviços</h2>
+      <p class="intro">Soluções para instalações, manutenção e melhoria do desempenho dos seus equipamentos e sistemas.</p>
+      <div class="servicos">
+        <article class="card">
+          <h3>⚡ Elétrica</h3>
+          <p>Instalações e manutenção elétrica, quadros, comandos elétricos e montagem de painéis.</p>
+        </article>
+        <article class="card">
+          <h3>📹 CFTV e segurança</h3>
+          <p>Instalação de câmeras, sistemas de monitoramento e controle de acesso.</p>
+        </article>
+        <article class="card">
+          <h3>❄️ Refrigeração e climatização</h3>
+          <p>Instalação e manutenção de sistemas de refrigeração e ar-condicionado.</p>
+        </article>
+        <article class="card">
+          <h3>🏠 Automação residencial</h3>
+          <p>Soluções de domótica para mais praticidade, conforto e controle.</p>
+        </article>
+        <article class="card">
+          <h3>🔧 Bombas e motores</h3>
+          <p>Serviços em bombas, motores de portão e equipamentos elétricos.</p>
+        </article>
+        <article class="card">
+          <h3>☀️ Energia e geradores</h3>
+          <p>Serviços de instalação e manutenção de geradores e sistemas fotovoltaicos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="sobre">
+        <h2>Sobre a Manutec Predial</h2>
+        <p>Atuação técnica em instalações e manutenção, com experiência prática em serviços elétricos e soluções para equipamentos prediais.</p>
+        <p>Nosso objetivo é oferecer atendimento responsável, qualidade no serviço e soluções que contribuam para mais desempenho e economia para você.</p>
+        <p><strong>Responsável técnico:</strong> Carlos Araújo.</p>
+        <p><strong>Formação:</strong> Técnico em Eletrotécnica.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="cinza contato">
+      <h2>Entre em contato</h2>
+      <p>Fale conosco para consultar serviços e solicitar um orçamento.</p>
+      <p><strong>Telefone/WhatsApp:</strong> (21) 96979-9854</p>
+      <p><strong>E-mail:</strong> manutecpredial940@yahoo.com</p>
+      <a class="botao" href="https://wa.me/5521969799854" target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Manutec Predial</strong></p>
+    <p>Instalação e manutenção elétrica, CFTV, refrigeração e climatização.</p>
+    <p>Mais desempenho e economia para você.</p>
+    <p>© 2026 Manutec Predial — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
